@@ -1,21 +1,21 @@
 # jshepler.ngu.framerate
-A mod that adds support for command line arguments (launch options in steam) to set framerate options.
+A mod that adds support for command line arguments (launch options in steam) to set framerate options. These are mutually exclusive - only set one of them.
 
 ## target frame rate
 Add `-targetFrameRate [rate]` to specify the max FPS the game will run at. ***This disables vSync***
 
 Example: `-targetFrameRate 120`.
 
-This sets the unity option: https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Application-targetFrameRate.html
+This sets the unity setting: https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Application-targetFrameRate.html
 
 By default, the game uses the default value of -1 for this setting.
 
 ## vSync count
-Add `-vSyncCount [count]` to speciy how many frames to sync at. ***Causes targetFrameRate to be ignored***
+Add `-vSyncCount [count]` to specify how many frames to sync at. ***Causes targetFrameRate to be ignored***
 
 Example: `-vSyncCount 1`
 
-This sets the unity option: https://docs.unity3d.com/2019.4/Documentation/ScriptReference/QualitySettings-vSyncCount.html
+This sets the unity setting: https://docs.unity3d.com/2019.4/Documentation/ScriptReference/QualitySettings-vSyncCount.html
 
 By default, the game sets the value of 1.
 
